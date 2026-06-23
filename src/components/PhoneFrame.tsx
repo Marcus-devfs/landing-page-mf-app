@@ -1,4 +1,4 @@
-import Image from 'next/image';
+'use client';
 
 interface PhoneFrameProps {
   src: string;
@@ -17,18 +17,19 @@ export function PhoneFrame({
 }: PhoneFrameProps) {
   return (
     <div className={`relative ${className}`}>
-      <div className="absolute inset-0 bg-white/20 rounded-[2.5rem] blur-2xl opacity-40 scale-95" />
+      <div className="absolute inset-0 bg-white/20 rounded-[2.5rem] blur-2xl opacity-40 scale-95" aria-hidden="true" />
       <div
         className={`relative mx-auto bg-gray-900 border-[8px] border-gray-900 rounded-[2.5rem] shadow-2xl shadow-black/30 overflow-hidden ${widthClass}`}
       >
-        <Image
+        {/* Native img avoids next/image SSR/client markup differences */}
+        <img
           src={src}
           alt={alt}
           width={390}
           height={844}
           className="w-full h-auto block"
-          priority={priority}
-          sizes="(max-width: 768px) 240px, 280px"
+          loading={priority ? 'eager' : 'lazy'}
+          decoding="async"
         />
       </div>
     </div>

@@ -53,32 +53,32 @@ export function Footer() {
                         <h3 className="font-bold text-gray-900 mb-5 text-sm uppercase tracking-wider">Plataforma</h3>
                         <ul className="space-y-3">
                             <li>
-                                <Link href="#clientes" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
+                                <Link href="/#clientes" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Para Clientes
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#profissionais" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
+                                <Link href="/#profissionais" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Para Profissionais
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#como-funciona" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
+                                <Link href="/#como-funciona" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Como Funciona
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#sobre" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
+                                <Link href="/#sobre" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Sobre a M&F
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#faq" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
+                                <Link href="/#faq" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Perguntas Frequentes
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#download" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
+                                <Link href="/#download" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Baixar o App
                                 </Link>
                             </li>
