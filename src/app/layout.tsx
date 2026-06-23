@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,15 +7,24 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-jakarta",
+  weight: ["500", "600", "700", "800"],
+});
+
 export const metadata: Metadata = {
-  title: "Conecta Marceneiro | Marcenaria de Qualidade na Palma da Mão",
+  title: "Conecta Marceneiro | Encontre Marceneiros Verificados Perto de Você",
   description:
-    "A plataforma que conecta clientes exigentes aos melhores marceneiros verificados do Brasil. Orçamentos online, chat em tempo real, pagamento seguro e acompanhamento do serviço. Uma iniciativa M&F Planejados.",
-  keywords: "marceneiro, móveis planejados, marcenaria, orçamento online, móveis sob medida",
+    "Solicite móveis sob medida, compare orçamentos na plataforma e pague com segurança. Profissionais verificados, pagamento protegido e acompanhamento do serviço do início ao fim.",
+  keywords:
+    "marceneiro, móveis planejados, marcenaria, orçamento online, móveis sob medida, marceneiro perto de mim",
   openGraph: {
-    title: "Conecta Marceneiro",
-    description: "O marceneiro certo, na hora certa. Profissionais verificados, pagamento seguro.",
+    title: "Conecta Marceneiro — O marceneiro certo, na hora certa",
+    description:
+      "Compare orçamentos, contrate com segurança e acompanhe seu projeto pelo app. Uma iniciativa M&F Planejados.",
     type: "website",
+    locale: "pt_BR",
   },
 };
 
@@ -26,7 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <body className={`${inter.variable} font-sans antialiased bg-white text-gray-900`}>
+      <body
+        className={`${inter.variable} ${jakarta.variable} font-sans antialiased bg-white text-gray-900`}
+      >
         {children}
       </body>
     </html>

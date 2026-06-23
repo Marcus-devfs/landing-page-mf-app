@@ -13,8 +13,8 @@ export function Footer() {
                                 <Hammer className="h-5 w-5 text-white" />
                             </div>
                             <div className="flex flex-col leading-none">
-                                <span className="font-black text-[17px] tracking-tight text-gray-900">Conecta</span>
-                                <span className="font-black text-[17px] tracking-tight text-red-600">Marceneiro</span>
+                                <span className="font-display font-extrabold text-[17px] tracking-tight text-gray-900">Conecta</span>
+                                <span className="font-display font-extrabold text-[17px] tracking-tight text-brand-600">Marceneiro</span>
                             </div>
                         </Link>
                         <p className="text-gray-500 text-sm leading-relaxed mb-8 max-w-sm">
@@ -53,27 +53,32 @@ export function Footer() {
                         <h3 className="font-bold text-gray-900 mb-5 text-sm uppercase tracking-wider">Plataforma</h3>
                         <ul className="space-y-3">
                             <li>
-                                <Link href="#clientes" className="text-gray-500 hover:text-red-600 transition-colors text-sm">
+                                <Link href="#clientes" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Para Clientes
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#profissionais" className="text-gray-500 hover:text-red-600 transition-colors text-sm">
+                                <Link href="#profissionais" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Para Profissionais
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#como-funciona" className="text-gray-500 hover:text-red-600 transition-colors text-sm">
+                                <Link href="#como-funciona" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Como Funciona
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#sobre" className="text-gray-500 hover:text-red-600 transition-colors text-sm">
+                                <Link href="#sobre" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Sobre a M&F
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#download" className="text-gray-500 hover:text-red-600 transition-colors text-sm">
+                                <Link href="#faq" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
+                                    Perguntas Frequentes
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#download" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Baixar o App
                                 </Link>
                             </li>
@@ -85,17 +90,17 @@ export function Footer() {
                         <h3 className="font-bold text-gray-900 mb-5 text-sm uppercase tracking-wider">Legal & Suporte</h3>
                         <ul className="space-y-3">
                             <li>
-                                <Link href="/privacidade" className="text-gray-500 hover:text-red-600 transition-colors text-sm">
+                                <Link href="/privacidade" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Política de Privacidade
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/termos" className="text-gray-500 hover:text-red-600 transition-colors text-sm">
+                                <Link href="/termos" className="text-gray-500 hover:text-brand-600 transition-colors text-sm">
                                     Termos de Uso
                                 </Link>
                             </li>
                             <li>
-                                <a href="mailto:contato@conectamarceneiro.com.br" className="text-gray-500 hover:text-red-600 transition-colors text-sm flex items-center gap-1.5">
+                                <a href="mailto:contato@conectamarceneiro.com.br" className="text-gray-500 hover:text-brand-600 transition-colors text-sm flex items-center gap-1.5">
                                     <Mail className="w-3.5 h-3.5" />
                                     Fale Conosco
                                 </a>
@@ -110,13 +115,13 @@ export function Footer() {
                         © {new Date().getFullYear()} Conecta Marceneiro. Todos os direitos reservados. Uma iniciativa M&F Planejados.
                     </p>
                     <div className="flex items-center gap-5">
-                        <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-red-600 transition-colors">
+                        <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-brand-600 transition-colors">
                             <Instagram className="w-5 h-5" />
                         </a>
-                        <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-red-600 transition-colors">
+                        <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-brand-600 transition-colors">
                             <Facebook className="w-5 h-5" />
                         </a>
-                        <a href="mailto:contato@conectamarceneiro.com.br" aria-label="Email" className="text-gray-400 hover:text-red-600 transition-colors">
+                        <a href="mailto:contato@conectamarceneiro.com.br" aria-label="Email" className="text-gray-400 hover:text-brand-600 transition-colors">
                             <Mail className="w-5 h-5" />
                         </a>
                     </div>
